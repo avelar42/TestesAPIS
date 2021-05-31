@@ -1,17 +1,13 @@
 using Service;
-using System;
-using TesteTecnico.Repository;
 using Xunit;
 
 namespace TesteCalculadoras
 {
     public class TesteTaxas
     {
-        private readonly CalculoTaxaJuros _taxaJuros;
         private readonly CalculadoraJurosCompostos _calculadoraJurosCompostos;
         public TesteTaxas()
         {
-            _taxaJuros = new CalculoTaxaJuros();
             _calculadoraJurosCompostos = new CalculadoraJurosCompostos();
         }
 

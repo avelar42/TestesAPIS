@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Service;
-using System;
-using System.Globalization;
-using TesteTecnico.Repository;
 
 namespace TesteTecnico.Controllers
 {
@@ -12,6 +9,12 @@ namespace TesteTecnico.Controllers
     {
         private CalculadoraJurosCompostos _calculadoraJurosCompostos = new CalculadoraJurosCompostos();
 
+        /// <summary>
+        /// Responsavel pelo calculo de juros compostos
+        /// </summary>
+        /// <param name="valorInicial"></param>
+        /// <param name="tempo"></param>
+        /// <returns>Json</returns>
         [HttpGet]
         public IActionResult Get(decimal valorInicial, int tempo)
         {

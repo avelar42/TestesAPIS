@@ -6,7 +6,14 @@ namespace Service
 {
     public class CalculadoraJurosCompostos
     {
-        private CalculoTaxaJuros _taxaJuros = new CalculoTaxaJuros();
+
+        /// <summary>
+        /// Retorna o valor calculado da taxa de Juros composta
+        /// </summary>
+        /// <param name="valorInicial"></param>
+        /// <param name="tempo"></param>
+        /// <param name="taxaJuros"></param>
+        /// <returns>decimal</returns>
         public decimal CalcularJurosCompostos(decimal valorInicial, int tempo, decimal taxaJuros)
         {
            

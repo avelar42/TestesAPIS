@@ -1,20 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Service;
-using TesteTecnico.Repository;
 
 namespace TesteTecnico.Controllers
 {
-    
+
     [ApiController]
     [Route("taxaJuros")]
     public class TaxaJurosController : ControllerBase
     {
-        private CalculoTaxaJuros taxaJuros = new CalculoTaxaJuros();
-
+        /// <summary>
+        /// Retornar o valor da taxa de Juros em decimal
+        /// </summary>
+        /// <returns>Json</returns>
         [HttpGet]
         public IActionResult Get()
         {

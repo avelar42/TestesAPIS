@@ -11,10 +11,15 @@ namespace API1.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        /// <summary>
+        /// Responsavel por retornar o calculo de juros de 1%
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public ActionResult Get()
         {
-            return new JsonResult(0.01m);
+            decimal valor = 1 / 100m;
+            return new JsonResult(valor);
         }
     }
 }
